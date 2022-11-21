@@ -16,9 +16,6 @@ public class Calculator {
         System.out.print("Enter second number: ");
         int num2 = sc.nextInt();
 
-        switch (operation)
-        {
 
-        }
     }
 }
