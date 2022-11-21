@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Calculator {
     static void addition(int num1, int num2) {
         System.out.println("Sum of "+num1+" and "+num2+" = "+(num1+num2));
-    }g
+    }
 
     static void subraction(int num1, int num2) {
         System.out.println("Subtraction of "+num1+" and "+num2+" = "+(num1-num2));
@@ -11,6 +11,12 @@ public class Calculator {
 
     static void multiplication(int num1, int num2) {
         System.out.println("product of "+num1+" and "+num2+" = "+(num1*num2));
+    }
+
+    static void division(int num1, int num2) {
+        float value = (float) num1/num2;
+        System.out.println(String.format("Division of %d and %d = %.1f", num1, num2, value));
+
     }
 
     public static void main(String[] args) {
@@ -38,6 +44,9 @@ public class Calculator {
                 break;
             case(3):
                 multiplication(num1, num2);
+                break;
+            case(4):
+                division(num1, num2);
                 break;
         }
     }
