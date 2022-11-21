@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Calculator {
     static void addition(int num1, int num2) {
-        System.out.println("Sum of "+num1+" and "+num2+" = "+num1+num2);
+        System.out.println("Sum of "+num1+" and "+num2+" = "+(num1+num2));
     }
 
     public static void main(String[] args) {
