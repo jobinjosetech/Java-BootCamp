@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import static java.lang.System.exit;
+
 public class Calculator {
     static void addition() {
         Scanner sc = new Scanner(System.in);
@@ -47,6 +49,7 @@ public class Calculator {
             System.out.println("2 -> Subtraction");
             System.out.println("3 -> Multiplication");
             System.out.println("4 -> Division");
+            System.out.println("5 -> Exit");
             System.out.println("-----------------------------------------");
             System.out.print("Please select an operation: ");
             int operation = sc.nextInt();
@@ -64,6 +67,8 @@ public class Calculator {
                 case (4):
                     division();
                     break;
+                case (5):
+                    System.exit(0);
                 default:
                     System.out.println("Invalid choice!!!");
             }
