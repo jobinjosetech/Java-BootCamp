@@ -36,8 +36,14 @@ public class Calculator {
         int num1 = sc.nextInt();
         System.out.print("Enter second number: ");
         int num2 = sc.nextInt();
-        float value = (float) num1/num2;
-        System.out.println(String.format("Division of %d and %d = %.1f", num1, num2, value));
+        try{
+            float value = (float) num1/num2;
+            System.out.println(String.format("Division of %d and %d = %.1f", num1, num2, value));
+        }catch (ArithmeticException e){
+            System.out.println("Division by zero error");
+        }
+
+
 
     }
 
